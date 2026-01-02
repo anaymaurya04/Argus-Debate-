@@ -1,0 +1,14 @@
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/ArgusApplication.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/Helper.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/HealthController.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/controller/ArgumentController.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/dto/AnalysisResponse.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/dto/AnalyzeArgumentRequest.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/dto/ClaimResponse.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/error/ApiErrorResponse.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/error/GlobalExceptionHandler.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/domain/AnalysisResult.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/domain/Argument.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/domain/Claim.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/http/SimpleHttpServer.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/service/ArgumentAnalyzerService.java
