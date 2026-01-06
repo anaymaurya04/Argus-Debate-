@@ -1,4 +1,5 @@
 com/argus/core/ArgusApplication.class
+com/argus/core/analysis/CompositeArgumentAnalyzer.class
 com/argus/core/domain/Claim.class
 com/argus/core/domain/AnalysisResult.class
 com/argus/core/http/SimpleHttpServer$HealthHandler.class
