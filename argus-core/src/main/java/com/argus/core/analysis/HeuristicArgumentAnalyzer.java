@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class HeuristicArgumentAnalyzer {
+public class HeuristicArgumentAnalyzer implements ArgumentAnalyzer{
 
-    public AnalysisResult analyse(Argument argument){
+    public AnalysisResult analyze(Argument argument){
         List<String> claimText = extractClaims(argument.text());
 
         List<Claim> claims = new ArrayList<>();
@@ -29,8 +29,55 @@ public class HeuristicArgumentAnalyzer {
 
     private String buildSummary(List<Claim> claims) {
 
-        return "";
+        boolean hasOvergeneralisation = false;
+        boolean hasWeakCausality = false;
+        boolean hasUnsupportedTimeline = false;
+
+        for (Claim claim : claims) {
+
+            if (claim.issues().contains("overgeneralization")) {
+                hasOvergeneralisation = true;
+            }
+
+            if (claim.issues().contains("unsupported_timeline")) {
+                hasUnsupportedTimeline = true;
+            }
+
+            if (claim.issues().contains("weak_causality")) {
+                hasWeakCausality = true;
+            }
+        }
+
+        if (!hasOvergeneralisation && !hasUnsupportedTimeline && !hasWeakCausality) {
+            return "The argument appears reasonable and well-supported.";
+        }
+
+        StringBuilder summary = new StringBuilder("The argument ");
+
+        if (hasOvergeneralisation) {
+            summary.append("uses overly general language");
+        }
+
+        if (hasUnsupportedTimeline) {
+            if (summary.length() > "The argument ".length()) {
+                summary.append(" and ");
+            }
+            summary.append("makes time-based claims without sufficient support");
+        }
+
+        if (hasWeakCausality) {
+            if (summary.length() > "The argument ".length()) {
+                summary.append(" and ");
+            }
+            summary.append("contains causal claims without sufficient evidence");
+        }
+
+        summary.append(".");
+
+        return summary.toString();
     }
+
+
 
     private Claim analyzeClaim(String text) {
         List<String> issues = new ArrayList<>();
@@ -53,7 +100,13 @@ public class HeuristicArgumentAnalyzer {
 
         if (lower.contains(" years ")
                 || lower.contains(" months ")
-                || lower.contains(" soon ")) {
+                || lower.contains(" soon ")
+                ||lower.endsWith(" years")
+                || lower.endsWith(" months")
+                || lower.endsWith(" soon")
+                || lower.startsWith("years ")
+                || lower.startsWith("months ")
+                || lower.startsWith("soon ")) {
 
             issues.add("unsupported_timeline");
         }

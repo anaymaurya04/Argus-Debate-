@@ -6,9 +6,11 @@ com/argus/core/service/ArgumentAnalyzerService.class
 com/argus/core/http/SimpleHttpServer.class
 com/argus/core/Helper.class
 com/argus/core/domain/Argument.class
+com/argus/core/analysis/ArgumentAnalyzer.class
 com/argus/core/api/dto/AnalysisResponse.class
 com/argus/core/api/HealthController.class
 com/argus/core/api/dto/ClaimResponse.class
+com/argus/core/analysis/HeuristicArgumentAnalyzer.class
 com/argus/core/api/dto/AnalyzeArgumentRequest.class
 com/argus/core/api/error/GlobalExceptionHandler.class
 com/argus/core/api/error/ApiErrorResponse.class

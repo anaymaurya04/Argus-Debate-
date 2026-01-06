@@ -1,5 +1,7 @@
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/ArgusApplication.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/Helper.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/analysis/ArgumentAnalyzer.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/analysis/HeuristicArgumentAnalyzer.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/HealthController.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/controller/ArgumentController.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/dto/AnalysisResponse.java
