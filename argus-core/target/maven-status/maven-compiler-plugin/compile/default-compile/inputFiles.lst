@@ -3,7 +3,7 @@
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/analysis/ArgumentAnalyzer.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/analysis/CompositeArgumentAnalyzer.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/analysis/HeuristicArgumentAnalyzer.java
-/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/HealthController.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/ArgumentGenerationController.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/controller/ArgumentController.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/dto/AnalysisResponse.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/api/dto/AnalyzeArgumentRequest.java
@@ -13,5 +13,9 @@
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/domain/AnalysisResult.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/domain/Argument.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/domain/Claim.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/domain/GeneratedArgument.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/domain/Stance.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/generation/ArgumentGenerator.java
+/home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/generation/StubArgumentGenerator.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/http/SimpleHttpServer.java
 /home/anay/Desktop/Academia/ARGUS/argus-core/src/main/java/com/argus/core/service/ArgumentAnalyzerService.java

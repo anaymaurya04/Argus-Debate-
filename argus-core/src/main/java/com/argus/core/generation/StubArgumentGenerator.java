@@ -4,6 +4,7 @@ import com.argus.core.domain.GeneratedArgument;
 import com.argus.core.domain.Stance;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -19,12 +20,17 @@ public class StubArgumentGenerator implements ArgumentGenerator {
         } else {
             openingStatement = "This argument opposes the position that " + topic + ".";
         }
+        List<String> claims = new ArrayList<>();
 
-        List<String> claims = List.of(
-                "This is a basic supporting claim.",
-                "This claim reflects the chosen stance.",
-                "At higher difficulty levels, this would be more sophisticated."
-        );
+        if (difficultyLevel == 1){
+            claims.add("This is obviously true");
+        } else if (difficultyLevel <=3&& difficultyLevel>1) {
+            claims.add("This has the data proving the point clearly");
+        }
+        else{
+            claims.add("While there are limitations, evidence suggests…");
+        }
+
 
         return new GeneratedArgument(
                 topic,
