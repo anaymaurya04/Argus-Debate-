@@ -19,7 +19,7 @@ public class ArgumentGenerationController {
     }
 
     @PostMapping
-    public GeneratedArgument generateArgument(@RequestParam String topic, @RequestParam Stance stance, @RequestParam int difficulty){
-        return argumentGenerator.generate(topic,stance,difficulty);
+    public GeneratedArgument generateArgument(@RequestParam String topic, @RequestParam Stance stance, @RequestParam int difficultyLevel){
+        return argumentGenerator.generate(topic,stance,difficultyLevel);
     }
 }
